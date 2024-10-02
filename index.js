@@ -30,7 +30,8 @@ app.use('/', viewRouter);
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
 
-app.use((err, req, res) => {
+// eslint-disable-next-line no-unused-vars
+app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   console.error(err);
   res.status(statusCode).json({
