@@ -1,0 +1,9 @@
+# Request to the localhost version
+### SWAGGER DOCUMENTATION PAGE (Localhost)
+http://localhost:3000/api-docs
+
+
+# Request to the published (deployed) version
+### SWAGGER DOCUMENTATION PAGE (deployed)
+https://node-api-epf2.onrender.com/api-docs
+
