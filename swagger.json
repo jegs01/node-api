@@ -6,7 +6,7 @@
     "version": "1.0.0",
     "title": "REST API"
   },
-  "host": "localhost:3000",
+  "host": "node-api-epf2.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
@@ -16,9 +16,6 @@
     "/": {
       "get": {
         "description": "",
-        "produces": [
-          "text/plain"
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -184,6 +181,9 @@
           "200": {
             "description": "OK"
           },
+          "400": {
+            "description": "Bad Request"
+          },
           "404": {
             "description": "Not Found"
           },
@@ -318,6 +318,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "404": {
             "description": "Not Found"

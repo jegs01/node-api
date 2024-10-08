@@ -6,11 +6,12 @@ const {
   updateProduct,
   deleteProduct
 } = require('../controllers/productController');
+const { isAuthenticated } = require('../middleware/authenticate');
 
 // CRUD routes
 router.get('/', getProducts);
-router.post('/', createProduct);
-router.put('/:id', updateProduct);
-router.delete('/:id', deleteProduct);
+router.post('/', isAuthenticated, createProduct);
+router.put('/:id', isAuthenticated, updateProduct);
+router.delete('/:id', isAuthenticated, deleteProduct);
 
 module.exports = router;
