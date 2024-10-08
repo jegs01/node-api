@@ -5,7 +5,7 @@ const doc = {
     tittle: 'Users Api',
     description: 'Users Api'
   },
-  host: 'localhost:3000',
+  host: 'node-api-epf2.onrender.com',
   schemes: ['http', 'https']
 };
 
