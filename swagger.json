@@ -9,8 +9,8 @@
   "host": "node-api-epf2.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/": {
